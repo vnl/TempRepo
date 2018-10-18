@@ -1,0 +1,1161 @@
+   1 {
+   2   "definitions": {},
+   3   "$schema": "http://json-schema.org/draft-07/schema#",
+   4   "$id": "http://example.com/root.json",
+   5   "type": "object",
+   6   "title": "The Root Schema",
+   7   "required": [
+   8     "match_details",
+   9     "toss_won_by_team_id"
+  10   ],
+  11   "properties": {
+  12     "match_details": {
+  13       "$id": "#/properties/match_details",
+  14       "type": "array",
+  15       "title": "The Match_details Schema",
+  16       "items": {
+  17         "$id": "#/properties/match_details/items",
+  18         "type": "object",
+  19         "title": "The Items Schema",
+  20         "required": [
+  21           "id",
+  22           "status",
+  23           "last_updated",
+  24           "home_team_name",
+  25           "home_team_id",
+  26           "home_club_name",
+  27           "home_club_id",
+  28           "away_team_name",
+  29           "away_team_id",
+  30           "away_club_name",
+  31           "away_club_id",
+  32           "match_date",
+  33           "no_of_innings",
+  34           "match_type",
+  35           "game_type",
+  36           "competition_type",
+  37           "match_time",
+  38           "ground_id",
+  39           "ground_name",
+  40           "competition_name",
+  41           "competition_id",
+  42           "division_name",
+  43           "division_id",
+  44           "cup_name",
+  45           "cup_id",
+  46           "round",
+  47           "umpire_1_name",
+  48           "umpire_1_id",
+  49           "umpire_2_name",
+  50           "umpire_2_id",
+  51           "umpire_3_name",
+  52           "umpire_3_id",
+  53           "referee_name",
+  54           "referee_id",
+  55           "scorer_1_name",
+  56           "scorer_1_id",
+  57           "scorer_2_name",
+  58           "scorer_2_id",
+  59           "meeting_time",
+  60           "meeting_place",
+  61           "toss_won_by_team_id",
+  62           "toss",
+  63           "batted_first",
+  64           "no_of_overs",
+  65           "no_of_days",
+  66           "result",
+  67           "result_description",
+  68           "result_applied_to",
+  69           "match_notes",
+  70           "players",
+  71           "innings"
+  72         ],
+  73         "properties": {
+  74           "id": {
+  75             "$id": "#/properties/match_details/items/properties/id",
+  76             "type": "string",
+  77             "title": "The Id Schema",
+  78             "default": "",
+  79             "examples": [
+  80               "6273"
+  81             ],
+  82             "pattern": "^(.*)$"
+  83           },
+  84           "status": {
+  85             "$id": "#/properties/match_details/items/properties/status",
+  86             "type": "string",
+  87             "title": "The Status Schema",
+  88             "default": "",
+  89             "examples": [
+  90               "New"
+  91             ],
+  92             "pattern": "^(.*)$"
+  93           },
+  94           "last_updated": {
+  95             "$id": "#/properties/match_details/items/properties/last_updated",
+  96             "type": "string",
+  97             "title": "The Last_updated Schema",
+  98             "default": "",
+  99             "examples": [
+ 100               "21/05/2018"
+ 101             ],
+ 102             "pattern": "^(.*)$"
+ 103           },
+ 104           "home_team_name": {
+ 105             "$id": "#/properties/match_details/items/properties/home_team_name",
+ 106             "type": "string",
+ 107             "title": "The Home_team_name Schema",
+ 108             "default": "",
+ 109             "examples": [
+ 110               "1st XI"
+ 111             ],
+ 112             "pattern": "^(.*)$"
+ 113           },
+ 114           "home_team_id": {
+ 115             "$id": "#/properties/match_details/items/properties/home_team_id",
+ 116             "type": "string",
+ 117             "title": "The Home_team_id Schema",
+ 118             "default": "",
+ 119             "examples": [
+ 120               "97"
+ 121             ],
+ 122             "pattern": "^(.*)$"
+ 123           },
+ 124           "home_club_name": {
+ 125             "$id": "#/properties/match_details/items/properties/home_club_name",
+ 126             "type": "string",
+ 127             "title": "The Home_club_name Schema",
+ 128             "default": "",
+ 129             "examples": [
+ 130               "Witney Mills"
+ 131             ],
+ 132             "pattern": "^(.*)$"
+ 133           },
+ 134           "home_club_id": {
+ 135             "$id": "#/properties/match_details/items/properties/home_club_id",
+ 136             "type": "string",
+ 137             "title": "The Home_club_id Schema",
+ 138             "default": "",
+ 139             "examples": [
+ 140               "37"
+ 141             ],
+ 142             "pattern": "^(.*)$"
+ 143           },
+ 144           "away_team_name": {
+ 145             "$id": "#/properties/match_details/items/properties/away_team_name",
+ 146             "type": "string",
+ 147             "title": "The Away_team_name Schema",
+ 148             "default": "",
+ 149             "examples": [
+ 150               "1st XI"
+ 151             ],
+ 152             "pattern": "^(.*)$"
+ 153           },
+ 154           "away_team_id": {
+ 155             "$id": "#/properties/match_details/items/properties/away_team_id",
+ 156             "type": "string",
+ 157             "title": "The Away_team_id Schema",
+ 158             "default": "",
+ 159             "examples": [
+ 160               "23"
+ 161             ],
+ 162             "pattern": "^(.*)$"
+ 163           },
+ 164           "away_club_name": {
+ 165             "$id": "#/properties/match_details/items/properties/away_club_name",
+ 166             "type": "string",
+ 167             "title": "The Away_club_name Schema",
+ 168             "default": "",
+ 169             "examples": [
+ 170               "Brackley"
+ 171             ],
+ 172             "pattern": "^(.*)$"
+ 173           },
+ 174           "away_club_id": {
+ 175             "$id": "#/properties/match_details/items/properties/away_club_id",
+ 176             "type": "string",
+ 177             "title": "The Away_club_id Schema",
+ 178             "default": "",
+ 179             "examples": [
+ 180               "9"
+ 181             ],
+ 182             "pattern": "^(.*)$"
+ 183           },
+ 184           "match_date": {
+ 185             "$id": "#/properties/match_details/items/properties/match_date",
+ 186             "type": "string",
+ 187             "title": "The Match_date Schema",
+ 188             "default": "",
+ 189             "examples": [
+ 190               "05/05/2018"
+ 191             ],
+ 192             "pattern": "^(.*)$"
+ 193           },
+ 194           "no_of_innings": {
+ 195             "$id": "#/properties/match_details/items/properties/no_of_innings",
+ 196             "type": "integer",
+ 197             "title": "The No_of_innings Schema",
+ 198             "default": 0,
+ 199             "examples": [
+ 200               1
+ 201             ]
+ 202           },
+ 203           "match_type": {
+ 204             "$id": "#/properties/match_details/items/properties/match_type",
+ 205             "type": "string",
+ 206             "title": "The Match_type Schema",
+ 207             "default": "",
+ 208             "examples": [
+ 209               "Limited Overs"
+ 210             ],
+ 211             "pattern": "^(.*)$"
+ 212           },
+ 213           "game_type": {
+ 214             "$id": "#/properties/match_details/items/properties/game_type",
+ 215             "type": "string",
+ 216             "title": "The Game_type Schema",
+ 217             "default": "",
+ 218             "examples": [
+ 219               "Standard"
+ 220             ],
+ 221             "pattern": "^(.*)$"
+ 222           },
+ 223           "competition_type": {
+ 224             "$id": "#/properties/match_details/items/properties/competition_type",
+ 225             "type": "null",
+ 226             "title": "The Competition_type Schema",
+ 227             "default": null,
+ 228             "examples": [
+ 229               null
+ 230             ]
+ 231           },
+ 232           "match_time": {
+ 233             "$id": "#/properties/match_details/items/properties/match_time",
+ 234             "type": "string",
+ 235             "title": "The Match_time Schema",
+ 236             "default": "",
+ 237             "examples": [
+ 238               ""
+ 239             ],
+ 240             "pattern": "^(.*)$"
+ 241           },
+ 242           "ground_id": {
+ 243             "$id": "#/properties/match_details/items/properties/ground_id",
+ 244             "type": "string",
+ 245             "title": "The Ground_id Schema",
+ 246             "default": "",
+ 247             "examples": [
+ 248               ""
+ 249             ],
+ 250             "pattern": "^(.*)$"
+ 251           },
+ 252           "ground_name": {
+ 253             "$id": "#/properties/match_details/items/properties/ground_name",
+ 254             "type": "string",
+ 255             "title": "The Ground_name Schema",
+ 256             "default": "",
+ 257             "examples": [
+ 258               "Witney Mills CC"
+ 259             ],
+ 260             "pattern": "^(.*)$"
+ 261           },
+ 262           "competition_name": {
+ 263             "$id": "#/properties/match_details/items/properties/competition_name",
+ 264             "type": "string",
+ 265             "title": "The Competition_name Schema",
+ 266             "default": "",
+ 267             "examples": [
+ 268               "Cherwell League"
+ 269             ],
+ 270             "pattern": "^(.*)$"
+ 271           },
+ 272           "competition_id": {
+ 273             "$id": "#/properties/match_details/items/properties/competition_id",
+ 274             "type": "string",
+ 275             "title": "The Competition_id Schema",
+ 276             "default": "",
+ 277             "examples": [
+ 278               "3"
+ 279             ],
+ 280             "pattern": "^(.*)$"
+ 281           },
+ 282           "division_name": {
+ 283             "$id": "#/properties/match_details/items/properties/division_name",
+ 284             "type": "string",
+ 285             "title": "The Division_name Schema",
+ 286             "default": "",
+ 287             "examples": [
+ 288               "Division 4"
+ 289             ],
+ 290             "pattern": "^(.*)$"
+ 291           },
+ 292           "division_id": {
+ 293             "$id": "#/properties/match_details/items/properties/division_id",
+ 294             "type": "string",
+ 295             "title": "The Division_id Schema",
+ 296             "default": "",
+ 297             "examples": [
+ 298               "4"
+ 299             ],
+ 300             "pattern": "^(.*)$"
+ 301           },
+ 302           "cup_name": {
+ 303             "$id": "#/properties/match_details/items/properties/cup_name",
+ 304             "type": "string",
+ 305             "title": "The Cup_name Schema",
+ 306             "default": "",
+ 307             "examples": [
+ 308               ""
+ 309             ],
+ 310             "pattern": "^(.*)$"
+ 311           },
+ 312           "cup_id": {
+ 313             "$id": "#/properties/match_details/items/properties/cup_id",
+ 314             "type": "string",
+ 315             "title": "The Cup_id Schema",
+ 316             "default": "",
+ 317             "examples": [
+ 318               ""
+ 319             ],
+ 320             "pattern": "^(.*)$"
+ 321           },
+ 322           "round": {
+ 323             "$id": "#/properties/match_details/items/properties/round",
+ 324             "type": "string",
+ 325             "title": "The Round Schema",
+ 326             "default": "",
+ 327             "examples": [
+ 328               ""
+ 329             ],
+ 330             "pattern": "^(.*)$"
+ 331           },
+ 332           "umpire_1_name": {
+ 333             "$id": "#/properties/match_details/items/properties/umpire_1_name",
+ 334             "type": "string",
+ 335             "title": "The Umpire_1_name Schema",
+ 336             "default": "",
+ 337             "examples": [
+ 338               "John Brown"
+ 339             ],
+ 340             "pattern": "^(.*)$"
+ 341           },
+ 342           "umpire_1_id": {
+ 343             "$id": "#/properties/match_details/items/properties/umpire_1_id",
+ 344             "type": "string",
+ 345             "title": "The Umpire_1_id Schema",
+ 346             "default": "",
+ 347             "examples": [
+ 348               "155"
+ 349             ],
+ 350             "pattern": "^(.*)$"
+ 351           },
+ 352           "umpire_2_name": {
+ 353             "$id": "#/properties/match_details/items/properties/umpire_2_name",
+ 354             "type": "string",
+ 355             "title": "The Umpire_2_name Schema",
+ 356             "default": "",
+ 357             "examples": [
+ 358               "Nathaniel Miles"
+ 359             ],
+ 360             "pattern": "^(.*)$"
+ 361           },
+ 362           "umpire_2_id": {
+ 363             "$id": "#/properties/match_details/items/properties/umpire_2_id",
+ 364             "type": "string",
+ 365             "title": "The Umpire_2_id Schema",
+ 366             "default": "",
+ 367             "examples": [
+ 368               "219"
+ 369             ],
+ 370             "pattern": "^(.*)$"
+ 371           },
+ 372           "umpire_3_name": {
+ 373             "$id": "#/properties/match_details/items/properties/umpire_3_name",
+ 374             "type": "string",
+ 375             "title": "The Umpire_3_name Schema",
+ 376             "default": "",
+ 377             "examples": [
+ 378               ""
+ 379             ],
+ 380             "pattern": "^(.*)$"
+ 381           },
+ 382           "umpire_3_id": {
+ 383             "$id": "#/properties/match_details/items/properties/umpire_3_id",
+ 384             "type": "string",
+ 385             "title": "The Umpire_3_id Schema",
+ 386             "default": "",
+ 387             "examples": [
+ 388               ""
+ 389             ],
+ 390             "pattern": "^(.*)$"
+ 391           },
+ 392           "referee_name": {
+ 393             "$id": "#/properties/match_details/items/properties/referee_name",
+ 394             "type": "string",
+ 395             "title": "The Referee_name Schema",
+ 396             "default": "",
+ 397             "examples": [
+ 398               ""
+ 399             ],
+ 400             "pattern": "^(.*)$"
+ 401           },
+ 402           "referee_id": {
+ 403             "$id": "#/properties/match_details/items/properties/referee_id",
+ 404             "type": "string",
+ 405             "title": "The Referee_id Schema",
+ 406             "default": "",
+ 407             "examples": [
+ 408               ""
+ 409             ],
+ 410             "pattern": "^(.*)$"
+ 411           },
+ 412           "scorer_1_name": {
+ 413             "$id": "#/properties/match_details/items/properties/scorer_1_name",
+ 414             "type": "string",
+ 415             "title": "The Scorer_1_name Schema",
+ 416             "default": "",
+ 417             "examples": [
+ 418               " "
+ 419             ],
+ 420             "pattern": "^(.*)$"
+ 421           },
+ 422           "scorer_1_id": {
+ 423             "$id": "#/properties/match_details/items/properties/scorer_1_id",
+ 424             "type": "null",
+ 425             "title": "The Scorer_1_id Schema",
+ 426             "default": null,
+ 427             "examples": [
+ 428               null
+ 429             ]
+ 430           },
+ 431           "scorer_2_name": {
+ 432             "$id": "#/properties/match_details/items/properties/scorer_2_name",
+ 433             "type": "string",
+ 434             "title": "The Scorer_2_name Schema",
+ 435             "default": "",
+ 436             "examples": [
+ 437               " "
+ 438             ],
+ 439             "pattern": "^(.*)$"
+ 440           },
+ 441           "scorer_2_id": {
+ 442             "$id": "#/properties/match_details/items/properties/scorer_2_id",
+ 443             "type": "null",
+ 444             "title": "The Scorer_2_id Schema",
+ 445             "default": null,
+ 446             "examples": [
+ 447               null
+ 448             ]
+ 449           },
+ 450           "meeting_time": {
+ 451             "$id": "#/properties/match_details/items/properties/meeting_time",
+ 452             "type": "string",
+ 453             "title": "The Meeting_time Schema",
+ 454             "default": "",
+ 455             "examples": [
+ 456               ""
+ 457             ],
+ 458             "pattern": "^(.*)$"
+ 459           },
+ 460           "meeting_place": {
+ 461             "$id": "#/properties/match_details/items/properties/meeting_place",
+ 462             "type": "string",
+ 463             "title": "The Meeting_place Schema",
+ 464             "default": "",
+ 465             "examples": [
+ 466               ""
+ 467             ],
+ 468             "pattern": "^(.*)$"
+ 469           },
+ 470           "toss_won_by_team_id": {
+ 471             "$id": "#/properties/match_details/items/properties/toss_won_by_team_id",
+ 472             "type": "string",
+ 473             "title": "The Toss_won_by_team_id Schema",
+ 474             "default": "",
+ 475             "examples": [
+ 476               "23"
+ 477             ],
+ 478             "pattern": "^(.*)$"
+ 479           },
+ 480           "toss": {
+ 481             "$id": "#/properties/match_details/items/properties/toss",
+ 482             "type": "string",
+ 483             "title": "The Toss Schema",
+ 484             "default": "",
+ 485             "examples": [
+ 486               "Brackley 1st XI won the toss and elected to bat"
+ 487             ],
+ 488             "pattern": "^(.*)$"
+ 489           },
+ 490           "batted_first": {
+ 491             "$id": "#/properties/match_details/items/properties/batted_first",
+ 492             "type": "string",
+ 493             "title": "The Batted_first Schema",
+ 494             "default": "",
+ 495             "examples": [
+ 496               "23"
+ 497             ],
+ 498             "pattern": "^(.*)$"
+ 499           },
+ 500           "no_of_overs": {
+ 501             "$id": "#/properties/match_details/items/properties/no_of_overs",
+ 502             "type": "string",
+ 503             "title": "The No_of_overs Schema",
+ 504             "default": "",
+ 505             "examples": [
+ 506               ""
+ 507             ],
+ 508             "pattern": "^(.*)$"
+ 509           },
+ 510           "no_of_days": {
+ 511             "$id": "#/properties/match_details/items/properties/no_of_days",
+ 512             "type": "integer",
+ 513             "title": "The No_of_days Schema",
+ 514             "default": 0,
+ 515             "examples": [
+ 516               1
+ 517             ]
+ 518           },
+ 519           "result": {
+ 520             "$id": "#/properties/match_details/items/properties/result",
+ 521             "type": "null",
+ 522             "title": "The Result Schema",
+ 523             "default": null,
+ 524             "examples": [
+ 525               null
+ 526             ]
+ 527           },
+ 528           "result_description": {
+ 529             "$id": "#/properties/match_details/items/properties/result_description",
+ 530             "type": "string",
+ 531             "title": "The Result_description Schema",
+ 532             "default": "",
+ 533             "examples": [
+ 534               "Brackley 1 beat Witney Mills 1 by 23 runs"
+ 535             ],
+ 536             "pattern": "^(.*)$"
+ 537           },
+ 538           "result_applied_to": {
+ 539             "$id": "#/properties/match_details/items/properties/result_applied_to",
+ 540             "type": "string",
+ 541             "title": "The Result_applied_to Schema",
+ 542             "default": "",
+ 543             "examples": [
+ 544               "23"
+ 545             ],
+ 546             "pattern": "^(.*)$"
+ 547           },
+ 548           "match_notes": {
+ 549             "$id": "#/properties/match_details/items/properties/match_notes",
+ 550             "type": "string",
+ 551             "title": "The Match_notes Schema",
+ 552             "default": "",
+ 553             "examples": [
+ 554               ""
+ 555             ],
+ 556             "pattern": "^(.*)$"
+ 557           },
+ 558           "players": {
+ 559             "$id": "#/properties/match_details/items/properties/players",
+ 560             "type": "array",
+ 561             "title": "The Players Schema",
+ 562             "items": {
+ 563               "$id": "#/properties/match_details/items/properties/players/items",
+ 564               "type": "object",
+ 565               "title": "The Items Schema",
+ 566               "required": [
+ 567                 "home"
+ 568               ],
+ 569               "properties": {
+ 570                 "home": {
+ 571                   "$id": "#/properties/match_details/items/properties/players/items/properties/home",
+ 572                   "type": "array",
+ 573                   "title": "The Home Schema",
+ 574                   "items": {
+ 575                     "$id": "#/properties/match_details/items/properties/players/items/properties/home/items",
+ 576                     "type": "object",
+ 577                     "title": "The Items Schema",
+ 578                     "required": [
+ 579                       "position",
+ 580                       "player_name",
+ 581                       "player_id",
+ 582                       "captain",
+ 583                       "wicket"
+ 584                     ],
+ 585                     "properties": {
+ 586                       "position": {
+ 587                         "$id": "#/properties/match_details/items/properties/players/items/properties/home/items/properties/position",
+ 588                         "type": "integer",
+ 589                         "title": "The Position Schema",
+ 590                         "default": 0,
+ 591                         "examples": [
+ 592                           1
+ 593                         ]
+ 594                       },
+ 595                       "player_name": {
+ 596                         "$id": "#/properties/match_details/items/properties/players/items/properties/home/items/properties/player_name",
+ 597                         "type": "string",
+ 598                         "title": "The Player_name Schema",
+ 599                         "default": "",
+ 600                         "examples": [
+ 601                           "Samuel Cross"
+ 602                         ],
+ 603                         "pattern": "^(.*)$"
+ 604                       },
+ 605                       "player_id": {
+ 606                         "$id": "#/properties/match_details/items/properties/players/items/properties/home/items/properties/player_id",
+ 607                         "type": "string",
+ 608                         "title": "The Player_id Schema",
+ 609                         "default": "",
+ 610                         "examples": [
+ 611                           "56005734"
+ 612                         ],
+ 613                         "pattern": "^(.*)$"
+ 614                       },
+ 615                       "captain": {
+ 616                         "$id": "#/properties/match_details/items/properties/players/items/properties/home/items/properties/captain",
+ 617                         "type": "string",
+ 618                         "title": "The Captain Schema",
+ 619                         "default": "",
+ 620                         "examples": [
+ 621                           "false"
+ 622                         ],
+ 623                         "pattern": "^(.*)$"
+ 624                       },
+ 625                       "wicket": {
+ 626                         "$id": "#/properties/match_details/items/properties/players/items/properties/home/items/properties/wicket",
+ 627                         "type": "string",
+ 628                         "title": "The Wicket Schema",
+ 629                         "default": "",
+ 630                         "examples": [
+ 631                           "false"
+ 632                         ],
+ 633                         "pattern": "^(.*)$"
+ 634                       }
+ 635                     }
+ 636                   }
+ 637                 }
+ 638               }
+ 639             }
+ 640           },
+ 641           "innings": {
+ 642             "$id": "#/properties/match_details/items/properties/innings",
+ 643             "type": "array",
+ 644             "title": "The Innings Schema",
+ 645             "items": {
+ 646               "$id": "#/properties/match_details/items/properties/innings/items",
+ 647               "type": "object",
+ 648               "title": "The Items Schema",
+ 649               "required": [
+ 650                 "team_batting_name",
+ 651                 "team_batting_id",
+ 652                 "innings_number",
+ 653                 "extra_byes",
+ 654                 "extra_leg_byes",
+ 655                 "extra_wides",
+ 656                 "extra_no_balls",
+ 657                 "extra_penalty_runs",
+ 658                 "extra_penalty_runs_awarded_in_other_innings",
+ 659                 "total_extras",
+ 660                 "runs",
+ 661                 "wickets",
+ 662                 "overs",
+ 663                 "declared",
+ 664                 "bat",
+ 665                 "fow",
+ 666                 "bowl"
+ 667               ],
+ 668               "properties": {
+ 669                 "team_batting_name": {
+ 670                   "$id": "#/properties/match_details/items/properties/innings/items/properties/team_batting_name",
+ 671                   "type": "string",
+ 672                   "title": "The Team_batting_name Schema",
+ 673                   "default": "",
+ 674                   "examples": [
+ 675                     "1st XI"
+ 676                   ],
+ 677                   "pattern": "^(.*)$"
+ 678                 },
+ 679                 "team_batting_id": {
+ 680                   "$id": "#/properties/match_details/items/properties/innings/items/properties/team_batting_id",
+ 681                   "type": "string",
+ 682                   "title": "The Team_batting_id Schema",
+ 683                   "default": "",
+ 684                   "examples": [
+ 685                     "23"
+ 686                   ],
+ 687                   "pattern": "^(.*)$"
+ 688                 },
+ 689                 "innings_number": {
+ 690                   "$id": "#/properties/match_details/items/properties/innings/items/properties/innings_number",
+ 691                   "type": "integer",
+ 692                   "title": "The Innings_number Schema",
+ 693                   "default": 0,
+ 694                   "examples": [
+ 695                     1
+ 696                   ]
+ 697                 },
+ 698                 "extra_byes": {
+ 699                   "$id": "#/properties/match_details/items/properties/innings/items/properties/extra_byes",
+ 700                   "type": "string",
+ 701                   "title": "The Extra_byes Schema",
+ 702                   "default": "",
+ 703                   "examples": [
+ 704                     "8"
+ 705                   ],
+ 706                   "pattern": "^(.*)$"
+ 707                 },
+ 708                 "extra_leg_byes": {
+ 709                   "$id": "#/properties/match_details/items/properties/innings/items/properties/extra_leg_byes",
+ 710                   "type": "string",
+ 711                   "title": "The Extra_leg_byes Schema",
+ 712                   "default": "",
+ 713                   "examples": [
+ 714                     "8"
+ 715                   ],
+ 716                   "pattern": "^(.*)$"
+ 717                 },
+ 718                 "extra_wides": {
+ 719                   "$id": "#/properties/match_details/items/properties/innings/items/properties/extra_wides",
+ 720                   "type": "string",
+ 721                   "title": "The Extra_wides Schema",
+ 722                   "default": "",
+ 723                   "examples": [
+ 724                     "38"
+ 725                   ],
+ 726                   "pattern": "^(.*)$"
+ 727                 },
+ 728                 "extra_no_balls": {
+ 729                   "$id": "#/properties/match_details/items/properties/innings/items/properties/extra_no_balls",
+ 730                   "type": "string",
+ 731                   "title": "The Extra_no_balls Schema",
+ 732                   "default": "",
+ 733                   "examples": [
+ 734                     "1"
+ 735                   ],
+ 736                   "pattern": "^(.*)$"
+ 737                 },
+ 738                 "extra_penalty_runs": {
+ 739                   "$id": "#/properties/match_details/items/properties/innings/items/properties/extra_penalty_runs",
+ 740                   "type": "string",
+ 741                   "title": "The Extra_penalty_runs Schema",
+ 742                   "default": "",
+ 743                   "examples": [
+ 744                     "0"
+ 745                   ],
+ 746                   "pattern": "^(.*)$"
+ 747                 },
+ 748                 "extra_penalty_runs_awarded_in_other_innings": {
+ 749                   "$id": "#/properties/match_details/items/properties/innings/items/properties/extra_penalty_runs_awarded_in_other_innings",
+ 750                   "type": "integer",
+ 751                   "title": "The Extra_penalty_runs_awarded_in_other_innings Schema",
+ 752                   "default": 0,
+ 753                   "examples": [
+ 754                     0
+ 755                   ]
+ 756                 },
+ 757                 "total_extras": {
+ 758                   "$id": "#/properties/match_details/items/properties/innings/items/properties/total_extras",
+ 759                   "type": "integer",
+ 760                   "title": "The Total_extras Schema",
+ 761                   "default": 0,
+ 762                   "examples": [
+ 763                     55
+ 764                   ]
+ 765                 },
+ 766                 "runs": {
+ 767                   "$id": "#/properties/match_details/items/properties/innings/items/properties/runs",
+ 768                   "type": "string",
+ 769                   "title": "The Runs Schema",
+ 770                   "default": "",
+ 771                   "examples": [
+ 772                     "240"
+ 773                   ],
+ 774                   "pattern": "^(.*)$"
+ 775                 },
+ 776                 "wickets": {
+ 777                   "$id": "#/properties/match_details/items/properties/innings/items/properties/wickets",
+ 778                   "type": "string",
+ 779                   "title": "The Wickets Schema",
+ 780                   "default": "",
+ 781                   "examples": [
+ 782                     "6"
+ 783                   ],
+ 784                   "pattern": "^(.*)$"
+ 785                 },
+ 786                 "overs": {
+ 787                   "$id": "#/properties/match_details/items/properties/innings/items/properties/overs",
+ 788                   "type": "string",
+ 789                   "title": "The Overs Schema",
+ 790                   "default": "",
+ 791                   "examples": [
+ 792                     "50"
+ 793                   ],
+ 794                   "pattern": "^(.*)$"
+ 795                 },
+ 796                 "declared": {
+ 797                   "$id": "#/properties/match_details/items/properties/innings/items/properties/declared",
+ 798                   "type": "string",
+ 799                   "title": "The Declared Schema",
+ 800                   "default": "",
+ 801                   "examples": [
+ 802                     "false"
+ 803                   ],
+ 804                   "pattern": "^(.*)$"
+ 805                 },
+ 806                 "bat": {
+ 807                   "$id": "#/properties/match_details/items/properties/innings/items/properties/bat",
+ 808                   "type": "array",
+ 809                   "title": "The Bat Schema",
+ 810                   "items": {
+ 811                     "$id": "#/properties/match_details/items/properties/innings/items/properties/bat/items",
+ 812                     "type": "object",
+ 813                     "title": "The Items Schema",
+ 814                     "required": [
+ 815                       "position",
+ 816                       "batsman_name",
+ 817                       "batsman_id",
+ 818                       "how_out",
+ 819                       "fielder_name",
+ 820                       "fielder_id",
+ 821                       "bowler_name",
+ 822                       "bowler_id",
+ 823                       "runs",
+ 824                       "fours",
+ 825                       "sixes",
+ 826                       "balls"
+ 827                     ],
+ 828                     "properties": {
+ 829                       "position": {
+ 830                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bat/items/properties/position",
+ 831                         "type": "integer",
+ 832                         "title": "The Position Schema",
+ 833                         "default": 0,
+ 834                         "examples": [
+ 835                           1
+ 836                         ]
+ 837                       },
+ 838                       "batsman_name": {
+ 839                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bat/items/properties/batsman_name",
+ 840                         "type": "string",
+ 841                         "title": "The Batsman_name Schema",
+ 842                         "default": "",
+ 843                         "examples": [
+ 844                           "Eric Carpenter"
+ 845                         ],
+ 846                         "pattern": "^(.*)$"
+ 847                       },
+ 848                       "batsman_id": {
+ 849                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bat/items/properties/batsman_id",
+ 850                         "type": "string",
+ 851                         "title": "The Batsman_id Schema",
+ 852                         "default": "",
+ 853                         "examples": [
+ 854                           "56000560"
+ 855                         ],
+ 856                         "pattern": "^(.*)$"
+ 857                       },
+ 858                       "how_out": {
+ 859                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bat/items/properties/how_out",
+ 860                         "type": "string",
+ 861                         "title": "The How_out Schema",
+ 862                         "default": "",
+ 863                         "examples": [
+ 864                           "Caught"
+ 865                         ],
+ 866                         "pattern": "^(.*)$"
+ 867                       },
+ 868                       "fielder_name": {
+ 869                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bat/items/properties/fielder_name",
+ 870                         "type": "string",
+ 871                         "title": "The Fielder_name Schema",
+ 872                         "default": "",
+ 873                         "examples": [
+ 874                           "Pierre Lefort"
+ 875                         ],
+ 876                         "pattern": "^(.*)$"
+ 877                       },
+ 878                       "fielder_id": {
+ 879                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bat/items/properties/fielder_id",
+ 880                         "type": "string",
+ 881                         "title": "The Fielder_id Schema",
+ 882                         "default": "",
+ 883                         "examples": [
+ 884                           "56002382"
+ 885                         ],
+ 886                         "pattern": "^(.*)$"
+ 887                       },
+ 888                       "bowler_name": {
+ 889                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bat/items/properties/bowler_name",
+ 890                         "type": "string",
+ 891                         "title": "The Bowler_name Schema",
+ 892                         "default": "",
+ 893                         "examples": [
+ 894                           "Sam Haselgrove"
+ 895                         ],
+ 896                         "pattern": "^(.*)$"
+ 897                       },
+ 898                       "bowler_id": {
+ 899                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bat/items/properties/bowler_id",
+ 900                         "type": "string",
+ 901                         "title": "The Bowler_id Schema",
+ 902                         "default": "",
+ 903                         "examples": [
+ 904                           "56003288"
+ 905                         ],
+ 906                         "pattern": "^(.*)$"
+ 907                       },
+ 908                       "runs": {
+ 909                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bat/items/properties/runs",
+ 910                         "type": "string",
+ 911                         "title": "The Runs Schema",
+ 912                         "default": "",
+ 913                         "examples": [
+ 914                           "37"
+ 915                         ],
+ 916                         "pattern": "^(.*)$"
+ 917                       },
+ 918                       "fours": {
+ 919                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bat/items/properties/fours",
+ 920                         "type": "string",
+ 921                         "title": "The Fours Schema",
+ 922                         "default": "",
+ 923                         "examples": [
+ 924                           "0"
+ 925                         ],
+ 926                         "pattern": "^(.*)$"
+ 927                       },
+ 928                       "sixes": {
+ 929                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bat/items/properties/sixes",
+ 930                         "type": "string",
+ 931                         "title": "The Sixes Schema",
+ 932                         "default": "",
+ 933                         "examples": [
+ 934                           "0"
+ 935                         ],
+ 936                         "pattern": "^(.*)$"
+ 937                       },
+ 938                       "balls": {
+ 939                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bat/items/properties/balls",
+ 940                         "type": "string",
+ 941                         "title": "The Balls Schema",
+ 942                         "default": "",
+ 943                         "examples": [
+ 944                           "0"
+ 945                         ],
+ 946                         "pattern": "^(.*)$"
+ 947                       }
+ 948                     }
+ 949                   }
+ 950                 },
+ 951                 "fow": {
+ 952                   "$id": "#/properties/match_details/items/properties/innings/items/properties/fow",
+ 953                   "type": "array",
+ 954                   "title": "The Fow Schema",
+ 955                   "items": {
+ 956                     "$id": "#/properties/match_details/items/properties/innings/items/properties/fow/items",
+ 957                     "type": "object",
+ 958                     "title": "The Items Schema",
+ 959                     "required": [
+ 960                       "runs",
+ 961                       "wickets",
+ 962                       "batsman_out_name",
+ 963                       "batsman_out_id",
+ 964                       "batsman_in_name",
+ 965                       "batsman_in_id",
+ 966                       "batsman_in_score"
+ 967                     ],
+ 968                     "properties": {
+ 969                       "runs": {
+ 970                         "$id": "#/properties/match_details/items/properties/innings/items/properties/fow/items/properties/runs",
+ 971                         "type": "string",
+ 972                         "title": "The Runs Schema",
+ 973                         "default": "",
+ 974                         "examples": [
+ 975                           "240"
+ 976                         ],
+ 977                         "pattern": "^(.*)$"
+ 978                       },
+ 979                       "wickets": {
+ 980                         "$id": "#/properties/match_details/items/properties/innings/items/properties/fow/items/properties/wickets",
+ 981                         "type": "string",
+ 982                         "title": "The Wickets Schema",
+ 983                         "default": "",
+ 984                         "examples": [
+ 985                           "7"
+ 986                         ],
+ 987                         "pattern": "^(.*)$"
+ 988                       },
+ 989                       "batsman_out_name": {
+ 990                         "$id": "#/properties/match_details/items/properties/innings/items/properties/fow/items/properties/batsman_out_name",
+ 991                         "type": "string",
+ 992                         "title": "The Batsman_out_name Schema",
+ 993                         "default": "",
+ 994                         "examples": [
+ 995                           "Joshua Markham"
+ 996                         ],
+ 997                         "pattern": "^(.*)$"
+ 998                       },
+ 999                       "batsman_out_id": {
+1000                         "$id": "#/properties/match_details/items/properties/innings/items/properties/fow/items/properties/batsman_out_id",
+1001                         "type": "string",
+1002                         "title": "The Batsman_out_id Schema",
+1003                         "default": "",
+1004                         "examples": [
+1005                           "56000576"
+1006                         ],
+1007                         "pattern": "^(.*)$"
+1008                       },
+1009                       "batsman_in_name": {
+1010                         "$id": "#/properties/match_details/items/properties/innings/items/properties/fow/items/properties/batsman_in_name",
+1011                         "type": "string",
+1012                         "title": "The Batsman_in_name Schema",
+1013                         "default": "",
+1014                         "examples": [
+1015                           "Oliver Burney"
+1016                         ],
+1017                         "pattern": "^(.*)$"
+1018                       },
+1019                       "batsman_in_id": {
+1020                         "$id": "#/properties/match_details/items/properties/innings/items/properties/fow/items/properties/batsman_in_id",
+1021                         "type": "string",
+1022                         "title": "The Batsman_in_id Schema",
+1023                         "default": "",
+1024                         "examples": [
+1025                           "56000642"
+1026                         ],
+1027                         "pattern": "^(.*)$"
+1028                       },
+1029                       "batsman_in_score": {
+1030                         "$id": "#/properties/match_details/items/properties/innings/items/properties/fow/items/properties/batsman_in_score",
+1031                         "type": "string",
+1032                         "title": "The Batsman_in_score Schema",
+1033                         "default": "",
+1034                         "examples": [
+1035                           "36"
+1036                         ],
+1037                         "pattern": "^(.*)$"
+1038                       }
+1039                     }
+1040                   }
+1041                 },
+1042                 "bowl": {
+1043                   "$id": "#/properties/match_details/items/properties/innings/items/properties/bowl",
+1044                   "type": "array",
+1045                   "title": "The Bowl Schema",
+1046                   "items": {
+1047                     "$id": "#/properties/match_details/items/properties/innings/items/properties/bowl/items",
+1048                     "type": "object",
+1049                     "title": "The Items Schema",
+1050                     "required": [
+1051                       "bowler_name",
+1052                       "bowler_id",
+1053                       "overs",
+1054                       "maidens",
+1055                       "runs",
+1056                       "wides",
+1057                       "wickets",
+1058                       "no_balls"
+1059                     ],
+1060                     "properties": {
+1061                       "bowler_name": {
+1062                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bowl/items/properties/bowler_name",
+1063                         "type": "string",
+1064                         "title": "The Bowler_name Schema",
+1065                         "default": "",
+1066                         "examples": [
+1067                           "Oliver Burney"
+1068                         ],
+1069                         "pattern": "^(.*)$"
+1070                       },
+1071                       "bowler_id": {
+1072                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bowl/items/properties/bowler_id",
+1073                         "type": "string",
+1074                         "title": "The Bowler_id Schema",
+1075                         "default": "",
+1076                         "examples": [
+1077                           "56000642"
+1078                         ],
+1079                         "pattern": "^(.*)$"
+1080                       },
+1081                       "overs": {
+1082                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bowl/items/properties/overs",
+1083                         "type": "string",
+1084                         "title": "The Overs Schema",
+1085                         "default": "",
+1086                         "examples": [
+1087                           "8"
+1088                         ],
+1089                         "pattern": "^(.*)$"
+1090                       },
+1091                       "maidens": {
+1092                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bowl/items/properties/maidens",
+1093                         "type": "string",
+1094                         "title": "The Maidens Schema",
+1095                         "default": "",
+1096                         "examples": [
+1097                           "0"
+1098                         ],
+1099                         "pattern": "^(.*)$"
+1100                       },
+1101                       "runs": {
+1102                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bowl/items/properties/runs",
+1103                         "type": "string",
+1104                         "title": "The Runs Schema",
+1105                         "default": "",
+1106                         "examples": [
+1107                           "45"
+1108                         ],
+1109                         "pattern": "^(.*)$"
+1110                       },
+1111                       "wides": {
+1112                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bowl/items/properties/wides",
+1113                         "type": "string",
+1114                         "title": "The Wides Schema",
+1115                         "default": "",
+1116                         "examples": [
+1117                           "4"
+1118                         ],
+1119                         "pattern": "^(.*)$"
+1120                       },
+1121                       "wickets": {
+1122                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bowl/items/properties/wickets",
+1123                         "type": "string",
+1124                         "title": "The Wickets Schema",
+1125                         "default": "",
+1126                         "examples": [
+1127                           "0"
+1128                         ],
+1129                         "pattern": "^(.*)$"
+1130                       },
+1131                       "no_balls": {
+1132                         "$id": "#/properties/match_details/items/properties/innings/items/properties/bowl/items/properties/no_balls",
+1133                         "type": "string",
+1134                         "title": "The No_balls Schema",
+1135                         "default": "",
+1136                         "examples": [
+1137                           "1"
+1138                         ],
+1139                         "pattern": "^(.*)$"
+1140                       }
+1141                     }
+1142                   }
+1143                 }
+1144               }
+1145             }
+1146           }
+1147         }
+1148       }
+1149     },
+1150     "toss_won_by_team_id": {
+1151       "$id": "#/properties/toss_won_by_team_id",
+1152       "type": "string",
+1153       "title": "The Toss_won_by_team_id Schema",
+1154       "default": "",
+1155       "examples": [
+1156         "23"
+1157       ],
+1158       "pattern": "^(.*)$"
+1159     }
+1160   }
+1161 }
